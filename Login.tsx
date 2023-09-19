@@ -31,7 +31,7 @@ const Login = () => {
         value={password}
         onChangeText={(text) => setPassword(text)}
       />
-      <Button title="Entrar" onPress={handleLogin} />
+      <Button color={"#000000"}  title="Entrar" onPress={handleLogin} />
       <Text style={styles.loginMessage}>{loginMessage}</Text>
     </View>
   );
@@ -39,14 +39,16 @@ const Login = () => {
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    height: "100%",
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#FF8874',
   },
   logo: {
-    width: 150,
-    height: 150,
+    width: 60,
+    height: 60,
     marginBottom: 20,
   },
   heading: {
